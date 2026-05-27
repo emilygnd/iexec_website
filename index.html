@@ -3,64 +3,328 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your smartest AI assistant</title>
+  <title>iExec — Build with Programmable Privacy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg">
-    <canvas id="wave"></canvas>
-    <div class="vignette"></div>
-  </div>
+  <div class="glow glow-right"></div>
+  <div class="glow glow-bottom"></div>
+  <div class="grid-overlay"></div>
 
+  <!-- NAV -->
   <nav class="navbar">
-    <div class="logo">LOGO</div>
+    <a href="/" class="logo" aria-label="iExec home">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 28L18 6L22 14L30 6L34 28H26L24 22L20 28L16 22L14 28H6Z" fill="white"/>
+      </svg>
+    </a>
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Community</a></li>
+      <li><a href="#">Solutions</a></li>
       <li><a href="#">Pricing</a></li>
+      <li><a href="#">Resources</a></li>
     </ul>
     <div class="nav-actions">
       <a href="#" class="login">Login</a>
-      <a href="#" class="btn btn-light">GET STARTED</a>
+      <a href="#" class="btn btn-outline">Sign up</a>
     </div>
   </nav>
 
-  <main class="hero">
-    <div class="badge">
-      <span class="badge-icon">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="#000"/>
-        </svg>
-      </span>
-      <span>Series D funding round was closed</span>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">
+        <span class="badge-pill">New</span>
+        <span>Introducing Nox mainnet — Confidential smart contracts and tokens</span>
+      </div>
+
+      <h1 class="headline">
+        <span class="gradient-text">Build with</span><br />
+        <span class="gradient-text">programmable</span><br />
+        <span class="gradient-text">privacy</span>
+      </h1>
+
+      <p class="subhead">
+        Powered by TEE and Intel® TDX, iExec delivers full control over on-chain
+        and off-chain data confidentiality.
+      </p>
+
+      <div class="cta-row">
+        <a href="https://docs.iex.ec" class="btn btn-gradient">
+          Start Building
+          <span class="btn-arrow">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+        <a href="#" class="link-cta">Talk To Us →</a>
+      </div>
     </div>
 
-    <h1 class="headline">
-      Your smartest AI assistant<br />
-      <span class="accent">work faster and smarter</span>
-    </h1>
-
-    <p class="subhead">
-      Smarter sales, faster decisions: AI powered dashboard with<br />
-      call analytics, transcripts, summaries and more.
-    </p>
-
-    <div class="cta-row">
-      <a href="#" class="btn btn-green">
-        GET STARTED
-        <svg class="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-      <a href="#" class="discover">DISCOVER MORE</a>
+    <div class="hero-art" aria-hidden="true">
+      <div class="cube cube-1"></div>
+      <div class="cube cube-2"></div>
+      <div class="cube cube-3"></div>
+      <div class="cube cube-4"></div>
+      <div class="cube-glow"></div>
     </div>
-  </main>
 
-  <script src="script.js"></script>
+    <a href="#pillars" class="scroll-down" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- PILLARS -->
+  <section id="pillars" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="section-title"><span class="gradient-text">Two pillars,</span><br/><span class="gradient-text">one privacy layer</span></h2>
+      </header>
+
+      <div class="grid-2">
+        <article class="card card-lg">
+          <span class="card-badge">Confidential DeFi</span>
+          <h3>Nox Protocol</h3>
+          <p>Confidential smart contracts and tokens. Build on encrypted data while staying composable with existing DeFi protocols.</p>
+          <a href="https://docs.iex.ec/nox-protocol" class="card-link">Explore Nox →</a>
+        </article>
+
+        <article class="card card-lg">
+          <span class="card-badge">Off-chain Privacy</span>
+          <h3>iExec PoCo</h3>
+          <p>TEE-secured off-chain computation for privacy-preserving dApps. Build with iApp, DataProtector, Web3Messaging.</p>
+          <a href="https://docs.iex.ec" class="card-link">Explore PoCo →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU CAN BUILD -->
+  <section class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="section-title"><span class="gradient-text">What you can build with</span><br/><span class="gradient-text">Confidential DeFi</span></h2>
+        <p class="section-sub">Industry applications powered by encrypted on-chain logic.</p>
+      </header>
+
+      <div class="grid-4">
+        <a href="https://cdefi.iex.ec" class="card card-sm">
+          <h4>Institutional DeFi</h4>
+          <p>Hidden balances, private transfers, on-demand auditability for funds and treasuries.</p>
+          <span class="card-link">Explore demo →</span>
+        </a>
+
+        <a href="#" class="card card-sm">
+          <h4>RWA tokenization</h4>
+          <p>Confidential tokenized equity and assets, protecting investor allocations on-chain.</p>
+          <span class="card-link">See cVault PoC →</span>
+        </a>
+
+        <a href="https://cdefi.iex.ec" class="card card-sm">
+          <h4>Private payments</h4>
+          <p>Confidential value transfers for payroll, subscriptions, and B2B settlements.</p>
+          <span class="card-link">Explore demo →</span>
+        </a>
+
+        <a href="#" class="card card-sm">
+          <h4>Confidential vaults</h4>
+          <p>Yield strategies protected from copy-trading and MEV with encrypted positions.</p>
+          <span class="card-link">See cVault PoC →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CDEFI FEATURE -->
+  <section class="section section-feature">
+    <div class="container feature-grid">
+      <div class="feature-visual" aria-hidden="true">
+        <div class="cube-feature">
+          <div class="cube-face cf-front"></div>
+          <div class="cube-face cf-back"></div>
+          <div class="cube-face cf-right"></div>
+          <div class="cube-face cf-left"></div>
+          <div class="cube-face cf-top"></div>
+          <div class="cube-face cf-bottom"></div>
+        </div>
+      </div>
+
+      <div class="feature-text">
+        <span class="eyebrow">Confidential DeFi</span>
+        <h2 class="section-title small"><span class="gradient-text">Encrypted balances.</span><br/><span class="gradient-text">Composable protocols.</span></h2>
+        <p>Bring confidentiality to DeFi without breaking composability. Issue confidential tokens, run encrypted strategies, and stay interoperable with the protocols you already use.</p>
+        <a href="/confidential-token" class="btn btn-outline btn-lg">Learn more about cDeFi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILD WITHOUT HASSLE -->
+  <section class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="section-title"><span class="gradient-text">Build without the</span><br/><span class="gradient-text">infrastructure hassle</span></h2>
+        <p class="section-sub">Ship privacy-preserving apps without standing up TEEs, attestation services, or key management. iExec handles the stack.</p>
+      </header>
+
+      <div class="grid-3">
+        <div class="info-card">
+          <div class="info-icon">⚙</div>
+          <h4>TEE-as-a-Service</h4>
+          <p>Secure enclaves on demand — Intel SGX and TDX, attested and production-ready.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">⌗</div>
+          <h4>Key management</h4>
+          <p>Confidential key release tied to attestation. No secrets in plaintext, ever.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">⇄</div>
+          <h4>EVM-composable</h4>
+          <p>Drop confidential logic into existing protocols. Same tooling, encrypted state.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED TOOLS -->
+  <section class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2 class="section-title"><span class="gradient-text">Start building with</span><br/><span class="gradient-text">iExec tools</span></h2>
+      </header>
+
+      <div class="grid-4">
+        <a href="https://docs.iex.ec/guides/build-iapp/build-&-test" class="card card-tool">
+          <div class="tool-art tool-art-1"></div>
+          <h4>Bootstrap TEE in minutes</h4>
+          <p>Spin up a confidential dev environment with one CLI command.</p>
+          <span class="card-link">Get started →</span>
+        </a>
+
+        <a href="https://cdefi.iex.ec" class="card card-tool">
+          <div class="tool-art tool-art-2"></div>
+          <h4>Confidential Token</h4>
+          <p>Live demo of encrypted balances and private transfers on-chain.</p>
+          <span class="card-link">Try it →</span>
+        </a>
+
+        <a href="https://demo.iex.ec/web3messaging" class="card card-tool">
+          <div class="tool-art tool-art-3"></div>
+          <h4>Web3Messaging</h4>
+          <p>Send privacy-preserving emails and Telegram messages to Ethereum accounts.</p>
+          <span class="card-link">Try it →</span>
+        </a>
+
+        <a href="https://docs.iex.ec/guides/build-iapp" class="card card-tool">
+          <div class="tool-art tool-art-4"></div>
+          <h4>iApp Generator</h4>
+          <p>Generate and deploy confidential apps with ready-to-use building blocks.</p>
+          <span class="card-link">Generate →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="section section-social">
+    <div class="container">
+      <header class="section-head center">
+        <h2 class="section-title small"><span class="gradient-text">Already trusted by leading</span><br/><span class="gradient-text">institutions and projects</span></h2>
+      </header>
+
+      <div class="logo-marquee" aria-label="Trusted partners">
+        <div class="marquee-track">
+          <span class="logo-item">Aethir</span>
+          <span class="logo-item">ar.io</span>
+          <span class="logo-item">bond.credit</span>
+          <span class="logo-item">ApeBond</span>
+          <span class="logo-item">Arweave</span>
+          <span class="logo-item">Otomato</span>
+          <span class="logo-item">DeXE</span>
+          <span class="logo-item">ChainGPT</span>
+          <span class="logo-item">OVH</span>
+          <!-- duplicate for seamless loop -->
+          <span class="logo-item" aria-hidden="true">Aethir</span>
+          <span class="logo-item" aria-hidden="true">ar.io</span>
+          <span class="logo-item" aria-hidden="true">bond.credit</span>
+          <span class="logo-item" aria-hidden="true">ApeBond</span>
+          <span class="logo-item" aria-hidden="true">Arweave</span>
+          <span class="logo-item" aria-hidden="true">Otomato</span>
+          <span class="logo-item" aria-hidden="true">DeXE</span>
+          <span class="logo-item" aria-hidden="true">ChainGPT</span>
+          <span class="logo-item" aria-hidden="true">OVH</span>
+        </div>
+      </div>
+
+      <figure class="testimonial">
+        <blockquote>
+          &ldquo;[Testimonial placeholder — short quote, ≤ 25 words, to be provided by the iExec team.]&rdquo;
+        </blockquote>
+        <figcaption>
+          <span class="t-name">[Name]</span>
+          <span class="t-role">[Title], [Company]</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section section-newsletter">
+    <div class="container newsletter-box">
+      <div>
+        <h2 class="section-title small"><span class="gradient-text">Stay in the loop</span></h2>
+        <p class="section-sub">Protocol updates, releases, and deep dives. No spam.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="you@domain.com" aria-label="Email" />
+        <button type="submit" class="btn btn-gradient">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="iExec home">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 28L18 6L22 14L30 6L34 28H26L24 22L20 28L16 22L14 28H6Z" fill="white"/>
+          </svg>
+        </a>
+        <p>Programmable privacy for Web3.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <a href="https://docs.iex.ec/nox-protocol">Nox Protocol</a>
+        <a href="https://docs.iex.ec">iExec PoCo</a>
+        <a href="/confidential-token">Confidential DeFi</a>
+      </div>
+      <div class="footer-col">
+        <h5>Developers</h5>
+        <a href="https://docs.iex.ec">Docs</a>
+        <a href="https://docs.iex.ec/guides/build-iapp">iApp Generator</a>
+        <a href="https://demo.iex.ec/web3messaging">Web3Messaging</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© iExec</span>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
