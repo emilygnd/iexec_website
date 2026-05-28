@@ -6,8 +6,15 @@
   <title>iExec — Build with Programmable Privacy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t !== 'dark' && t !== 'light') t = 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 </head>
 <body>
   <div class="glow glow-right"></div>
@@ -17,24 +24,138 @@
   <!-- NAV -->
   <nav class="navbar">
     <a href="/" class="logo" aria-label="iExec home">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 28L18 6L22 14L30 6L34 28H26L24 22L20 28L16 22L14 28H6Z" fill="white"/>
+      <svg class="logo-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="16" cy="5" r="2.4" fill="#f5c84a"/>
+        <circle cx="7"  cy="11" r="2.4" fill="#f5c84a"/>
+        <circle cx="25" cy="11" r="2.4" fill="#f5c84a"/>
+        <circle cx="16" cy="16" r="2.4" fill="#f5c84a"/>
+        <circle cx="7"  cy="21" r="2.4" fill="#f5c84a"/>
+        <circle cx="25" cy="21" r="2.4" fill="#f5c84a"/>
+        <circle cx="16" cy="27" r="2.4" fill="#f5c84a"/>
       </svg>
+      <span class="logo-text">iExec</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Solutions</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Resources</a></li>
+      <li class="nav-item">
+        <button type="button" class="nav-trigger" aria-haspopup="true">Learn</button>
+        <div class="nav-panel nav-panel-3" role="menu">
+          <div class="panel-col">
+            <h6 class="panel-head">Ressources</h6>
+            <a href="https://docs.iex.ec" class="panel-card">
+              <span class="panel-title">Docs</span>
+              <p>Browse through iExec's documentation.</p>
+            </a>
+            <a href="#" class="panel-card">
+              <span class="panel-title">Tutorial</span>
+              <p>Learn iExec basics with our starter course.</p>
+            </a>
+          </div>
+          <div class="panel-col">
+            <h6 class="panel-head">Ecosystem</h6>
+            <a href="#" class="panel-card">
+              <span class="panel-title">Ecosystem Map</span>
+              <p>Explore our ecosystem of projects and partners.</p>
+            </a>
+            <a href="#" class="panel-card">
+              <span class="panel-title">Case Studies</span>
+              <p>Discover real-world iExec case studies.</p>
+            </a>
+            <a href="#" class="panel-card">
+              <span class="panel-title">Blog</span>
+              <p>Read insights, guides, and tutorials.</p>
+            </a>
+          </div>
+          <div class="panel-col">
+            <h6 class="panel-head">RLC</h6>
+            <a href="#" class="panel-card">
+              <span class="panel-title">RLC Token</span>
+              <p>Learn about iExec's native token.</p>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="nav-trigger" aria-haspopup="true">Build</button>
+        <div class="nav-panel nav-panel-2" role="menu">
+          <div class="panel-col">
+            <h6 class="panel-head">Tools</h6>
+            <a href="/confidential-token" class="panel-card">
+              <span class="panel-title">Confidential Token</span>
+              <p>Build and manage private tokens with hidden balances and secure transfers.</p>
+            </a>
+            <a href="https://docs.iex.ec/guides/build-iapp" class="panel-card">
+              <span class="panel-title">iApp Generator</span>
+              <p>Launch confidential apps faster with ready-to-use building blocks.</p>
+            </a>
+            <a href="#" class="panel-card">
+              <span class="panel-title">iExec Explorer</span>
+              <p>Track transactions and on-chain assets.</p>
+            </a>
+          </div>
+          <div class="panel-col">
+            <h6 class="panel-head">Demos</h6>
+            <a href="https://demo.iex.ec/web3messaging" class="panel-card">
+              <span class="panel-title">Web3Messaging Demo</span>
+              <p>Try iExec's web3messagind demo.</p>
+            </a>
+            <a href="https://cdefi.iex.ec" class="panel-card">
+              <span class="panel-title">Confidential Token Demo</span>
+              <p>Wrap, unwrap, transfer and control what others can see.</p>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="nav-trigger" aria-haspopup="true">Connect</button>
+        <div class="nav-panel nav-panel-3" role="menu">
+          <div class="panel-col">
+            <h6 class="panel-head">Community</h6>
+            <a href="#" class="panel-card">
+              <span class="panel-title">Community Hub</span>
+              <p>Connect with others.</p>
+            </a>
+            <a href="#" class="panel-card">
+              <span class="panel-title">Ecosystem Fund</span>
+              <p>Apply for grants and ecosystem support.</p>
+            </a>
+          </div>
+          <div class="panel-col">
+            <h6 class="panel-head">Got a question about our tech ?</h6>
+            <a href="#" class="panel-card">
+              <span class="panel-title">Talk to our tech support</span>
+              <p>Get clear answers about how our tech can work for you.</p>
+            </a>
+          </div>
+          <div class="panel-col">
+            <h6 class="panel-head">iExec</h6>
+            <a href="#" class="panel-card">
+              <span class="panel-title">Careers</span>
+              <p>Join our team of crypto innovators.</p>
+            </a>
+          </div>
+        </div>
+      </li>
     </ul>
     <div class="nav-actions">
-      <a href="#" class="login">Login</a>
-      <a href="#" class="btn btn-outline">Sign up</a>
+      <button type="button" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+        <svg class="t-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="t-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <a href="https://docs.iex.ec" class="btn btn-outline">Start Building</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-backdrop" aria-hidden="true"></div>
+    <div class="hero-halo hero-halo-1" aria-hidden="true"></div>
+    <div class="hero-halo hero-halo-2" aria-hidden="true"></div>
+    <div class="hero-halo hero-halo-3" aria-hidden="true"></div>
     <div class="hero-content">
       <div class="badge">
         <span class="badge-pill">New</span>
@@ -293,9 +414,16 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="/" class="logo" aria-label="iExec home">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 28L18 6L22 14L30 6L34 28H26L24 22L20 28L16 22L14 28H6Z" fill="white"/>
+          <svg class="logo-mark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="16" cy="5" r="2.4" fill="#f5c84a"/>
+            <circle cx="7"  cy="11" r="2.4" fill="#f5c84a"/>
+            <circle cx="25" cy="11" r="2.4" fill="#f5c84a"/>
+            <circle cx="16" cy="16" r="2.4" fill="#f5c84a"/>
+            <circle cx="7"  cy="21" r="2.4" fill="#f5c84a"/>
+            <circle cx="25" cy="21" r="2.4" fill="#f5c84a"/>
+            <circle cx="16" cy="27" r="2.4" fill="#f5c84a"/>
           </svg>
+          <span class="logo-text">iExec</span>
         </a>
         <p>Programmable privacy for Web3.</p>
       </div>
@@ -326,5 +454,18 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.theme-toggle');
+      if (!toggle) return;
+      toggle.addEventListener('click', function () {
+        var html = document.documentElement;
+        var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
 </html>
