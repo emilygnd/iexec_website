@@ -5,13 +5,11 @@ export const config = { matcher: '/:path*' };
 
 export default function middleware(request) {
   const USER = process.env.SITE_USER || 'iexec';
-  const PASS = process.env.SITE_PASSWORD;
+  const PASS = process.env.SITE_PASSWORD || 'iexec-2026-product';
   const header = request.headers.get('authorization') || '';
 
-  if (PASS) {
-    const expected = 'Basic ' + btoa(`${USER}:${PASS}`);
-    if (header === expected) return; // correct credentials → let the request through
-  }
+  const expected = 'Basic ' + btoa(`${USER}:${PASS}`);
+  if (header === expected) return; // correct credentials → let the request through
 
   return new Response('Authentication required.', {
     status: 401,
