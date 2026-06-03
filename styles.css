@@ -2469,10 +2469,6 @@ html { scroll-behavior: smooth; }
   font-size: clamp(32px, 4.4vw, 52px);
   line-height: 1.04;
   letter-spacing: -0.025em;
-  background: linear-gradient(180deg, var(--ink-900) 0%, var(--indigo-600) 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: var(--text);
 }
 .footer-socials {
@@ -2549,7 +2545,6 @@ html { scroll-behavior: smooth; }
 
 /* Dark-theme footer restores the premium dark gradient treatment */
 [data-theme="dark"] .footer-brand p { color: rgba(255, 255, 255, 0.62); }
-[data-theme="dark"] .footer-title { background: linear-gradient(180deg, #ffffff 0%, #D7DEFF 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 [data-theme="dark"] .footer-social { color: rgba(255, 255, 255, 0.82); background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.14); }
 [data-theme="dark"] .footer-social:hover { color: #fff; background: rgba(177, 195, 255, 0.16); border-color: rgba(177, 195, 255, 0.55); box-shadow: 0 10px 22px rgba(116, 142, 255, 0.30); }
 [data-theme="dark"] .footer-nav a:hover { color: var(--indigo-200); }
@@ -3225,18 +3220,6 @@ html { scroll-behavior: smooth; }
   100% { transform: translate3d(-2%, -4%, 0) scale(1.1) rotate(3deg); }
 }
 .home-alt .hero-grid { position: relative; z-index: 1; }
-.home-alt .hero-title {
-  background: linear-gradient(180deg, var(--text) 35%, var(--indigo-600) 130%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-[data-theme="dark"] .home-alt .hero-title {
-  background: linear-gradient(180deg, #ffffff 30%, #A9BCFF 125%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 /* --- Draw-on-hover icons inside the cards (like the main home) --- */
 .home-alt .card-icon {
@@ -3277,19 +3260,8 @@ html { scroll-behavior: smooth; }
   .home-alt .cta-card:hover .card-icon svg .icon-stroke { animation: none; }
 }
 
-/* --- Stats: oversized gradient numbers --- */
-.home-alt .metric strong {
-  background: linear-gradient(135deg, var(--indigo-500), var(--indigo-700));
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-[data-theme="dark"] .home-alt .metric strong {
-  background: linear-gradient(135deg, #B6C6FF, #6E83F5);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* --- Stats: solid accent numbers --- */
+.home-alt .metric strong { color: var(--accent); }
 
 /* --- Cards: soft top tint, top accent line, deeper hover glow --- */
 .home-alt .split-card,
@@ -3357,19 +3329,7 @@ html { scroll-behavior: smooth; }
   50%      { box-shadow: 0 0 0 7px rgba(116, 142, 255, 0); }
 }
 
-/* --- Statement (Option 3): shimmering gradient accent line --- */
-.home-alt .statement-line--accent {
-  background: linear-gradient(100deg, var(--indigo-500), var(--mauve), var(--indigo-600), var(--mauve));
-  background-size: 250% auto;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: alt-shimmer 7s linear infinite;
-}
-@keyframes alt-shimmer { to { background-position: 250% center; } }
-
 @media (prefers-reduced-motion: reduce) {
   .home-alt .hero::after,
-  .home-alt .roadmap-marker::before,
-  .home-alt .statement-line--accent { animation: none; }
+  .home-alt .roadmap-marker::before { animation: none; }
 }
