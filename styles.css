@@ -3091,8 +3091,7 @@ html { scroll-behavior: smooth; }
 .version-switch {
   position: fixed;
   top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 24px;
   z-index: 40;
   display: inline-flex;
   align-items: center;
