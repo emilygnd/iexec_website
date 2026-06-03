@@ -1,0 +1,8 @@
+# Local preview bundle (don't deploy/commit the 30MB zip)
+iexec-site-preview.zip
+site-export/
+_pkg/
+_pagegen.ps1
+_body_*.html
+node_modules/
+.DS_Store
