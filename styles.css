@@ -3333,3 +3333,58 @@ html { scroll-behavior: smooth; }
   .home-alt .hero::after,
   .home-alt .roadmap-marker::before { animation: none; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   Hover policy (site-wide): only clickable (link) cards elevate.
+   Non-clickable cards keep a border highlight + icon animation only.
+   ════════════════════════════════════════════════════════════ */
+.pillar-card:hover,
+.problem-card:hover,
+.split-card:hover,
+.cta-card:hover,
+.decision-card:hover,
+.proto-col:hover,
+.builder-card:hover,
+.blog-card:hover,
+.cs-card:hover,
+.event-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+/* Match .home-alt specificity to override the premium-layer elevation */
+.home-alt .split-card:hover,
+.home-alt .cta-card:hover,
+.home-alt .decision-card:hover,
+.home-alt .proto-col:hover,
+.home-alt .builder-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* ════════════════════════════════════════════════════════════
+   "Our journey" timeline — progress line advances to the last step
+   ════════════════════════════════════════════════════════════ */
+.home-alt .roadmap-timeline--5 { position: relative; padding-bottom: 30px; }
+.home-alt .roadmap-timeline--5 > .roadmap-step { position: relative; z-index: 1; }
+.home-alt .roadmap-timeline--5::before,
+.home-alt .roadmap-timeline--5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  height: 3px;
+  border-radius: 3px;
+}
+.home-alt .roadmap-timeline--5::before { right: 0; background: var(--line); }
+.home-alt .roadmap-timeline--5::after {
+  width: 0;
+  background: linear-gradient(90deg, var(--indigo-400), var(--accent));
+  box-shadow: 0 0 12px rgba(116, 142, 255, 0.7);
+}
+.home-alt .roadmap-timeline--5.in-view::after {
+  animation: journey-advance 2.4s var(--ease-out-expo) 0.25s forwards;
+}
+@keyframes journey-advance { from { width: 0; } to { width: 100%; } }
+@media (prefers-reduced-motion: reduce) {
+  .home-alt .roadmap-timeline--5.in-view::after { animation: none; width: 100%; }
+}
