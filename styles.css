@@ -3242,22 +3242,27 @@ html { scroll-behavior: smooth; }
 .home-alt .card-icon svg { width: 24px; height: 24px; overflow: visible; }
 .home-alt .card-icon svg .icon-stroke { stroke-dasharray: 1; stroke-dashoffset: 0; }
 .home-alt .split-card:hover .card-icon svg .icon-stroke,
-.home-alt .cta-card:hover .card-icon svg .icon-stroke {
+.home-alt .cta-card:hover .card-icon svg .icon-stroke,
+.home-alt .decision-card:hover .card-icon svg .icon-stroke {
   animation: pillar-icon-draw 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 .home-alt .split-card:hover .card-icon svg .icon-stroke:nth-of-type(2),
-.home-alt .cta-card:hover .card-icon svg .icon-stroke:nth-of-type(2) { animation-delay: 0.35s; }
+.home-alt .cta-card:hover .card-icon svg .icon-stroke:nth-of-type(2),
+.home-alt .decision-card:hover .card-icon svg .icon-stroke:nth-of-type(2) { animation-delay: 0.35s; }
 .home-alt .split-card:hover .card-icon,
-.home-alt .cta-card:hover .card-icon {
+.home-alt .cta-card:hover .card-icon,
+.home-alt .decision-card:hover .card-icon {
   transform: scale(1.08) rotate(-3deg);
   background: var(--indigo-200);
   box-shadow: 0 10px 22px rgba(143, 163, 255, 0.30);
 }
 [data-theme="dark"] .home-alt .split-card:hover .card-icon,
-[data-theme="dark"] .home-alt .cta-card:hover .card-icon { background: rgba(143, 163, 255, 0.22); color: var(--indigo-300); }
+[data-theme="dark"] .home-alt .cta-card:hover .card-icon,
+[data-theme="dark"] .home-alt .decision-card:hover .card-icon { background: rgba(143, 163, 255, 0.22); color: var(--indigo-300); }
 @media (prefers-reduced-motion: reduce) {
   .home-alt .split-card:hover .card-icon svg .icon-stroke,
-  .home-alt .cta-card:hover .card-icon svg .icon-stroke { animation: none; }
+  .home-alt .cta-card:hover .card-icon svg .icon-stroke,
+  .home-alt .decision-card:hover .card-icon svg .icon-stroke { animation: none; }
 }
 
 /* --- Stats: solid accent numbers --- */
