@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ecosystem Map — iExec</title>
-  <meta name="description" content="Builders, partners, exchanges and research backing the iExec confidential web. Filter by category, relation and tech." />
+  <meta name="description" content="The iExec ecosystem: builders, partners, exchanges and research powering a privacy-first Web3." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500;600;700;800;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -218,192 +218,325 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero hero--page hero--short">
-    <div class="container hero-page-inner reveal reveal--blur">
-      <p class="eyebrow">Ecosystem</p>
-      <h1 class="hero-title">The iExec ecosystem</h1>
-      <p class="hero-sub">Builders, partners, exchanges and research backing the confidential web.</p>
-    </div>
-  </section>
-
-  <!-- STICKY FILTERS -->
-  <div class="filter-bar" data-filter-root>
-    <div class="container filter-bar-inner">
-      <div class="filter-group" data-dim="category">
-        <span class="filter-label">Category</span>
-        <button class="filter-pill is-active" data-val="all">All</button>
-        <button class="filter-pill" data-val="defi">DeFi</button>
-        <button class="filter-pill" data-val="infra">Infra</button>
-        <button class="filter-pill" data-val="ai">AI</button>
-        <button class="filter-pill" data-val="rwa">RWA</button>
-        <button class="filter-pill" data-val="identity">Identity</button>
-        <button class="filter-pill" data-val="security">Security</button>
+  <!-- 1. HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Ecosystem</p>
+        <h1 class="hero-title">The iExec<br/>Ecosystem map</h1>
+        <p class="hero-sub">Our ecosystem unites builders, users, and partners around one goal: empowering a privacy-first Web3 where everyone keeps control of their data.</p>
+        <div class="hero-cta">
+          <a href="https://airtable.com/appDiKrXe5wJgGpdP/pagoNgBu2BxNdVNi3/form" class="btn btn-primary" target="_blank" rel="noopener"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Collaborate with us</span><span class="btn-label-text" aria-hidden="true">Collaborate with us</span></span></span></a>
+        </div>
       </div>
-      <div class="filter-group" data-dim="type">
-        <span class="filter-label">Relation</span>
-        <button class="filter-pill is-active" data-val="all">All</button>
-        <button class="filter-pill" data-val="builder">Builder</button>
-        <button class="filter-pill" data-val="partner">Partner</button>
-        <button class="filter-pill" data-val="exchange">Exchange</button>
-        <button class="filter-pill" data-val="research">Research</button>
-        <button class="filter-pill" data-val="foundation">Foundation</button>
-      </div>
-      <div class="filter-group" data-dim="tech">
-        <span class="filter-label">Uses</span>
-        <button class="filter-pill is-active" data-val="all">All</button>
-        <button class="filter-pill" data-val="ctoken">cToken</button>
-        <button class="filter-pill" data-val="cvault">cVault</button>
-        <button class="filter-pill" data-val="dataprotector">DataProtector</button>
-        <button class="filter-pill" data-val="web3messaging">Web3Messaging</button>
-        <button class="filter-pill" data-val="iapp">iApp</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- PROJECTS GRID -->
-  <section class="section">
-    <div class="container">
-      <div class="eco-grid" data-filter-grid>
-        <a class="eco-card" data-filter-item data-featured data-category="defi" data-type="builder" data-tech="ctoken" href="#">
-          <span class="eco-star" aria-label="Featured">★</span>
-          <span class="eco-logo"><img src="assets/dexe_logo.png" alt="DeXe" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'eco-mono',textContent:'D'}))" /></span>
-          <h3>DeXe</h3>
-          <span class="eco-cat">DeFi · Builder</span>
-          <span class="eco-tech">Uses: cToken</span>
-        </a>
-        <a class="eco-card" data-filter-item data-featured data-category="rwa" data-type="builder" data-tech="cvault" href="#">
-          <span class="eco-star" aria-label="Featured">★</span>
-          <span class="eco-logo eco-logo--mono"><span class="eco-mono">R</span></span>
-          <h3>RWA Studio</h3>
-          <span class="eco-cat">RWA · Builder</span>
-          <span class="eco-tech">Uses: cVault</span>
-        </a>
-        <a class="eco-card" data-filter-item data-category="defi" data-type="partner" data-tech="ctoken" href="#">
-          <span class="eco-logo"><img src="assets/apebond-Logo.png" alt="ApeBond" /></span>
-          <h3>ApeBond</h3>
-          <span class="eco-cat">DeFi · Partner</span>
-          <span class="eco-tech">Uses: cToken</span>
-        </a>
-        <a class="eco-card" data-filter-item data-category="infra" data-type="partner" data-tech="iapp" href="#">
-          <span class="eco-logo"><img src="assets/arweave_Logo.png" alt="Arweave" /></span>
-          <h3>Arweave</h3>
-          <span class="eco-cat">Infra · Partner</span>
-          <span class="eco-tech">Uses: iApp</span>
-        </a>
-        <a class="eco-card" data-filter-item data-category="infra" data-type="partner" data-tech="iapp" href="#">
-          <span class="eco-logo"><img src="assets/aethir_logo.png" alt="Aethir" /></span>
-          <h3>Aethir</h3>
-          <span class="eco-cat">Infra · Partner</span>
-          <span class="eco-tech">Uses: iApp</span>
-        </a>
-        <a class="eco-card" data-filter-item data-category="ai" data-type="builder" data-tech="dataprotector" href="#">
-          <span class="eco-logo"><img src="assets/otomato-Logo.png" alt="Otomato" /></span>
-          <h3>Otomato</h3>
-          <span class="eco-cat">AI · Builder</span>
-          <span class="eco-tech">Uses: DataProtector</span>
-        </a>
-        <a class="eco-card" data-filter-item data-category="identity" data-type="builder" data-tech="dataprotector" href="#">
-          <span class="eco-logo eco-logo--mono"><span class="eco-mono">I</span></span>
-          <h3>IDport</h3>
-          <span class="eco-cat">Identity · Builder</span>
-          <span class="eco-tech">Uses: DataProtector</span>
-        </a>
-        <a class="eco-card" data-filter-item data-category="security" data-type="partner" data-tech="web3messaging" href="#">
-          <span class="eco-logo eco-logo--mono"><span class="eco-mono">S</span></span>
-          <h3>SecureMsg</h3>
-          <span class="eco-cat">Security · Partner</span>
-          <span class="eco-tech">Uses: Web3Messaging</span>
-        </a>
-        <a class="eco-card" data-filter-item data-category="defi" data-type="builder" data-tech="cvault" href="#">
-          <span class="eco-logo eco-logo--mono"><span class="eco-mono">V</span></span>
-          <h3>VaultLabs</h3>
-          <span class="eco-cat">DeFi · Builder</span>
-          <span class="eco-tech">Uses: cVault</span>
-        </a>
-        <a class="eco-card" data-filter-item data-category="rwa" data-type="builder" data-tech="ctoken" href="#">
-          <span class="eco-logo eco-logo--mono"><span class="eco-mono">T</span></span>
-          <h3>TokenizeIt</h3>
-          <span class="eco-cat">RWA · Builder</span>
-          <span class="eco-tech">Uses: cToken</span>
-        </a>
-        <p class="eco-empty" data-filter-empty hidden>No projects match these filters.</p>
+      <div class="hero-visual hero-visual--image" aria-hidden="true">
+        <img class="hero-anim" src="assets/ecosystem.png" alt="" />
       </div>
     </div>
   </section>
 
-  <!-- COMPACT: EXCHANGES / RESEARCH / FOUNDATIONS -->
+  <!-- 2. FEATURED PROJECTS -->
   <section class="section section-light">
     <div class="container">
+      <header class="section-head reveal reveal--blur">
+        <p class="eyebrow">Featured projects</p>
+        <h2 class="section-title">Building on iExec</h2>
+      </header>
+      <div class="eco-featured-grid reveal-stagger reveal-stagger--scale">
+        <article class="eco-card eco-card--feature">
+          <div class="eco-card-head">
+            <span class="eco-logo"><span class="eco-mono">IF</span></span>
+            <div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Builder</span></div>
+          </div>
+          <h3 class="eco-name">Incentive Finance</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses cToken</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">Incentive Finance is a DeFi platform that enables liquidity providers to participate in recovery markets.</p>
+          <div class="eco-links">
+            <a href="#" class="eco-icon-link" aria-label="X" title="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="eco-icon-link" aria-label="Website" title="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a>
+            <a href="#" class="eco-learn">Learn more →</a>
+          </div>
+        </article>
+        <article class="eco-card eco-card--feature">
+          <div class="eco-card-head">
+            <span class="eco-logo"><img src="assets/apebond-Logo.png" alt="ApeBond" /></span>
+            <div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Builder</span></div>
+          </div>
+          <h3 class="eco-name">ApeBond</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses cToken</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">On ApeBond, projects can raise funds transparently while users earn rewards, driving long-term stability and growth.</p>
+          <div class="eco-links">
+            <a href="#" class="eco-icon-link" aria-label="X" title="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="eco-icon-link" aria-label="Website" title="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a>
+            <a href="#" class="eco-learn">Learn more →</a>
+          </div>
+        </article>
+        <article class="eco-card eco-card--feature">
+          <div class="eco-card-head">
+            <span class="eco-logo"><img src="assets/otomato-Logo.png" alt="Otomato" /></span>
+            <div class="eco-card-meta"><span class="eco-tag">Infra</span><span class="eco-tag eco-tag--type">Builder</span></div>
+          </div>
+          <h3 class="eco-name">Otomato</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses DataProtector</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">Otomato is an automation platform for Web3 workflows and agents. By integrating iExec's confidential computing, Otomato ensures that automations and AI agents can run with privacy guarantees, keeping strategies and sensitive data protected.</p>
+          <div class="eco-links">
+            <a href="#" class="eco-icon-link" aria-label="X" title="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="eco-icon-link" aria-label="Website" title="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a>
+            <a href="#" class="eco-learn">Learn more →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SUBMIT BANNER -->
+  <section class="section-band">
+    <div class="container banner-inner">
+      <p class="banner-text">Building with iExec? Get listed on our Ecosystem Map.</p>
+      <a href="https://airtable.com/appDiKrXe5wJgGpdP/pagoNgBu2BxNdVNi3/form" class="btn btn-primary" target="_blank" rel="noopener"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Submit your project</span><span class="btn-label-text" aria-hidden="true">Submit your project</span></span></span></a>
+    </div>
+  </section>
+
+  <!-- 4. BROWSE ALL -->
+  <section class="section">
+    <div class="container">
+      <header class="section-head reveal reveal--blur">
+        <p class="eyebrow">Directory</p>
+        <h2 class="section-title">Browse all</h2>
+      </header>
+
+      <div class="eco-controls" data-filter-root>
+        <label class="eco-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" class="eco-search-input" placeholder="Search projects…" aria-label="Search projects" />
+        </label>
+        <div class="filter-group" data-dim="category">
+          <span class="filter-label">Category</span>
+          <button class="filter-pill is-active" data-val="all">All</button>
+          <button class="filter-pill" data-val="defi">DeFi</button>
+          <button class="filter-pill" data-val="rwa">RWA</button>
+          <button class="filter-pill" data-val="identity">Identity</button>
+          <button class="filter-pill" data-val="infra">Infra</button>
+          <button class="filter-pill" data-val="wallet">Wallet</button>
+          <button class="filter-pill" data-val="depin">DePIN</button>
+          <button class="filter-pill" data-val="ai">AI</button>
+          <button class="filter-pill" data-val="dao">DAO</button>
+          <button class="filter-pill" data-val="payments">Payments</button>
+          <button class="filter-pill" data-val="cloud">Cloud</button>
+          <button class="filter-pill" data-val="storage">Storage</button>
+        </div>
+        <div class="filter-group" data-dim="type">
+          <span class="filter-label">Type</span>
+          <button class="filter-pill is-active" data-val="all">All</button>
+          <button class="filter-pill" data-val="builder">Builder</button>
+          <button class="filter-pill" data-val="partner">Partner</button>
+        </div>
+      </div>
+
+      <div class="eco-grid" data-filter-grid>
+        <!-- Builders -->
+        <article class="eco-card" data-filter-item data-category="defi" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">IF</span></span><div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">Incentive Finance</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses cToken</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">A DeFi platform enabling liquidity providers to participate in recovery markets.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="defi" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><img src="assets/apebond-Logo.png" alt="ApeBond" /></span><div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">ApeBond</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses cToken</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">Projects raise funds transparently while users earn rewards, driving long-term stability and growth.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="infra" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><img src="assets/otomato-Logo.png" alt="Otomato" /></span><div class="eco-card-meta"><span class="eco-tag">Infra</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">Otomato</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses DataProtector</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">Automation for Web3 workflows and AI agents, run with iExec confidential computing privacy guarantees.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="wallet" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">TW</span></span><div class="eco-card-meta"><span class="eco-tag">Wallet</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">TempWallets</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses DataProtector</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">Send and receive funds without exposing your primary wallet address, safeguarding anonymity and security.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="ai" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">1x</span></span><div class="eco-card-meta"><span class="eco-tag">AI</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">1xBuild</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses DataProtector</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">Tools and infrastructure to build AI agents with minimal overhead and a high standard on data control.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="defi" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">BC</span></span><div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">Bond Credit</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses cToken</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">On-chain credit markets for DeFi: access credit, collateralize assets, and join transparent lending systems.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="defi" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">EN</span></span><div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">Earned Network</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses cToken</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">A next-gen yield layer connecting any app or protocol to DeFi and RWA yields through a single API.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="defi" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">Dx</span></span><div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">Dexpal</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses DataProtector</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">A data terminal and rewards hub for leverage trading on DEXs, with insights and privacy-respecting tracking.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="dao" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">Q</span></span><div class="eco-card-meta"><span class="eco-tag">DAO</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">QSTN</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses DataProtector</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">A Web3 survey platform that rewards users for participation while projects gather insights, fairly and privately.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="storage" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">DIV</span></span><div class="eco-card-meta"><span class="eco-tag">Storage</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">DIV Protocol</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses DataProtector</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">Secures your digital files with full confidentiality and ownership — reliable decentralized file security.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="defi" data-type="builder">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">Nx</span></span><div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Builder</span></div></div>
+          <h3 class="eco-name">Neox</h3>
+          <div class="eco-badges"><span class="eco-tech">Uses cToken</span><span class="eco-status">Ecosystem</span></div>
+          <p class="eco-desc">Agentic Yield Infrastructure that lets neobanks and fintechs offer DeFi yields through a simple API.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <!-- Partners -->
+        <article class="eco-card" data-filter-item data-category="infra" data-type="partner">
+          <div class="eco-card-head"><span class="eco-logo"><img src="assets/aethir_logo.png" alt="Aethir" /></span><div class="eco-card-meta"><span class="eco-tag">Infra</span><span class="eco-tag eco-tag--type">Partner</span></div></div>
+          <h3 class="eco-name">Aethir</h3>
+          <p class="eco-desc">Decentralized GPU cloud infrastructure for AI and high-performance compute.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="storage" data-type="partner">
+          <div class="eco-card-head"><span class="eco-logo"><img src="assets/arweave_Logo.png" alt="Arweave" /></span><div class="eco-card-meta"><span class="eco-tag">Storage</span><span class="eco-tag eco-tag--type">Partner</span></div></div>
+          <h3 class="eco-name">Arweave</h3>
+          <p class="eco-desc">Permanent, decentralized data storage for the Web3 era.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="infra" data-type="partner">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">ar</span></span><div class="eco-card-meta"><span class="eco-tag">Infra</span><span class="eco-tag eco-tag--type">Partner</span></div></div>
+          <h3 class="eco-name">Ar.io</h3>
+          <p class="eco-desc">Permaweb gateway infrastructure built on Arweave.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="ai" data-type="partner">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">C</span></span><div class="eco-card-meta"><span class="eco-tag">AI</span><span class="eco-tag eco-tag--type">Partner</span></div></div>
+          <h3 class="eco-name">ChainGPT</h3>
+          <p class="eco-desc">AI infrastructure and tooling for Web3 builders and users.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="defi" data-type="partner">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">DX</span></span><div class="eco-card-meta"><span class="eco-tag">DeFi</span><span class="eco-tag eco-tag--type">Partner</span></div></div>
+          <h3 class="eco-name">DeXE</h3>
+          <p class="eco-desc">Decentralized social trading and DAO management platform.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <article class="eco-card" data-filter-item data-category="cloud" data-type="partner">
+          <div class="eco-card-head"><span class="eco-logo"><span class="eco-mono">OVH</span></span><div class="eco-card-meta"><span class="eco-tag">Cloud</span><span class="eco-tag eco-tag--type">Partner</span></div></div>
+          <h3 class="eco-name">OVH</h3>
+          <p class="eco-desc">European cloud provider powering confidential compute infrastructure.</p>
+          <div class="eco-links"><a href="#" class="eco-icon-link" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="eco-icon-link" aria-label="Website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg></a><a href="#" class="eco-learn">Learn more →</a></div>
+        </article>
+        <p class="eco-empty" data-filter-empty hidden>No projects match your search.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. TRUSTED BY -->
+  <section class="section section-light">
+    <div class="container">
+      <header class="section-head center reveal reveal--blur">
+        <p class="eyebrow">Trusted by</p>
+        <h2 class="section-title small">RLC across the industry</h2>
+      </header>
+
       <div class="eco-strip-block reveal reveal--blur">
         <h4 class="eco-strip-title">Exchanges</h4>
-        <!-- PLACEHOLDER: exchange logos (assets to provide) -->
-        <div class="eco-strip">
-          <span class="eco-strip-logo">Binance</span>
-          <span class="eco-strip-logo">Coinbase</span>
-          <span class="eco-strip-logo">Kraken</span>
-          <span class="eco-strip-logo">OKX</span>
-          <span class="eco-strip-logo">Bitget</span>
+        <div class="eco-strip eco-strip--wide">
+          <a class="eco-strip-logo" href="https://www.binance.com/en/price/rlc" target="_blank" rel="noopener">Binance</a>
+          <a class="eco-strip-logo" href="https://www.coinbase.com/en-fr/price/rlc" target="_blank" rel="noopener">Coinbase</a>
+          <a class="eco-strip-logo" href="https://upbit.com/exchange?code=CRIX.UPBIT.BTC-RLC" target="_blank" rel="noopener">UPbit</a>
+          <a class="eco-strip-logo" href="https://www.bitget.site/spot/RLCUSDT" target="_blank" rel="noopener">Bitget</a>
+          <a class="eco-strip-logo" href="https://www.kraken.com/prices/iexec-rlc" target="_blank" rel="noopener">Kraken</a>
+          <a class="eco-strip-logo" href="https://www.mexc.com/exchange/RLC_USDT" target="_blank" rel="noopener">MEXC</a>
+          <a class="eco-strip-logo" href="https://www.kucoin.com/trade/RLC-USDT" target="_blank" rel="noopener">KuCoin</a>
+          <a class="eco-strip-logo" href="https://crypto.com/exchange/trade/spot/RLC_USDT" target="_blank" rel="noopener">Crypto.com</a>
+          <a class="eco-strip-logo" href="https://app.uniswap.org/explore/tokens/arbitrum/0xe649e6a1F2afc63ca268C2363691ceCAF75CF47C?inputCurrency=NATIVE" target="_blank" rel="noopener">Uniswap</a>
+          <a class="eco-strip-logo" href="https://www.revolut.com/crypto/price/rlc/" target="_blank" rel="noopener">Revolut</a>
         </div>
       </div>
+
       <div class="eco-strip-block reveal reveal--blur">
         <h4 class="eco-strip-title">Research</h4>
-        <!-- PLACEHOLDER: research partner logos (assets to provide) -->
+        <!-- PLACEHOLDER: research partner logos -->
         <div class="eco-strip">
-          <span class="eco-strip-logo">EPFL</span>
-          <span class="eco-strip-logo">Inria</span>
+          <span class="eco-strip-logo">INSA Lyon</span>
+          <span class="eco-strip-logo">LABRI</span>
           <span class="eco-strip-logo">CNRS</span>
-          <span class="eco-strip-logo">Intel Labs</span>
-          <span class="eco-strip-logo">EF Research</span>
+          <span class="eco-strip-logo">Grenoble INP</span>
+          <span class="eco-strip-logo">AUEB</span>
+          <span class="eco-strip-logo">FRI</span>
         </div>
       </div>
+
       <div class="eco-strip-block reveal reveal--blur">
-        <h4 class="eco-strip-title">Foundations</h4>
-        <!-- PLACEHOLDER: foundation logos (assets to provide) -->
+        <h4 class="eco-strip-title">Foundations &amp; Industry</h4>
+        <!-- PLACEHOLDER: foundation/industry logos -->
         <div class="eco-strip">
-          <span class="eco-strip-logo">Ethereum</span>
-          <span class="eco-strip-logo">Arbitrum</span>
-          <span class="eco-strip-logo">Web3 Foundation</span>
-          <span class="eco-strip-logo">Privacy &amp; Scaling</span>
-          <span class="eco-strip-logo">Linux Foundation</span>
+          <span class="eco-strip-logo">Ethereum Foundation</span>
+          <span class="eco-strip-logo">CCC</span>
+          <span class="eco-strip-logo">Intel</span>
+          <span class="eco-strip-logo">Microsoft</span>
+          <span class="eco-strip-logo">NVIDIA</span>
+          <span class="eco-strip-logo">Bpifrance</span>
+          <span class="eco-strip-logo">ADAN</span>
         </div>
       </div>
     </div>
   </section>
 
   <script>
-    /* Generic multi-dimension filter (used on Ecosystem Map, Case Studies, Blog) */
+    /* Ecosystem directory filter: category + type + search */
     (function () {
-      document.querySelectorAll('[data-filter-root]').forEach(function (root) {
-        var gridSel = root.getAttribute('data-target');
-        var grid = gridSel ? document.querySelector(gridSel) : document.querySelector('[data-filter-grid]');
-        if (!grid) return;
-        var empty = grid.querySelector('[data-filter-empty]');
-        var state = {};
-        root.querySelectorAll('.filter-group').forEach(function (g) { state[g.dataset.dim] = 'all'; });
-        function apply() {
-          var shown = 0;
-          grid.querySelectorAll('[data-filter-item]').forEach(function (card) {
-            var show = Object.keys(state).every(function (dim) {
-              var v = state[dim];
-              if (v === 'all') return true;
-              return (card.dataset[dim] || '').split(' ').indexOf(v) > -1;
-            });
-            card.classList.toggle('is-hidden', !show);
-            if (show) shown++;
-          });
-          if (empty) empty.hidden = shown !== 0;
-        }
-        root.querySelectorAll('.filter-pill').forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            var group = btn.closest('.filter-group');
-            group.querySelectorAll('.filter-pill').forEach(function (b) { b.classList.remove('is-active'); });
-            btn.classList.add('is-active');
-            state[group.dataset.dim] = btn.dataset.val;
-            apply();
-          });
+      var root = document.querySelector('[data-filter-root]');
+      if (!root) return;
+      var items = document.querySelectorAll('[data-filter-item]');
+      var empty = document.querySelector('[data-filter-empty]');
+      var state = { category: 'all', type: 'all', q: '' };
+      function apply() {
+        var shown = 0;
+        items.forEach(function (card) {
+          var ok = (state.category === 'all' || (card.dataset.category || '') === state.category)
+                && (state.type === 'all' || (card.dataset.type || '') === state.type);
+          if (ok && state.q) ok = (card.textContent || '').toLowerCase().indexOf(state.q) > -1;
+          card.classList.toggle('is-hidden', !ok);
+          if (ok) shown++;
+        });
+        if (empty) empty.hidden = shown !== 0;
+      }
+      root.querySelectorAll('.filter-pill').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var g = btn.closest('.filter-group');
+          g.querySelectorAll('.filter-pill').forEach(function (b) { b.classList.remove('is-active'); });
+          btn.classList.add('is-active');
+          state[g.dataset.dim] = btn.dataset.val;
+          apply();
         });
       });
+      var s = root.querySelector('.eco-search-input');
+      if (s) s.addEventListener('input', function () { state.q = s.value.trim().toLowerCase(); apply(); });
     })();
   </script>
 
