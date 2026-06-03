@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>iExec - The Confidential Blockchain Stack</title>
+  <title>iExec — Privacy infrastructure for Web3 (Heritage)</title>
+  <meta name="description" content="Building TEE-secured privacy since 2017. Now powering Confidential DeFi & RWA with Nox." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500;600;700;800;900&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -220,388 +221,200 @@
   <!-- VERSION SWITCH (internal, remove before prod) -->
   <div class="version-switch" role="group" aria-label="Homepage version (internal preview)">
     <span class="vs-label">Preview</span>
-    <a href="index.html" class="vs-opt is-active">Option 1</a>
-    <a href="index-option2.html" class="vs-opt">Option 2</a>
+    <a href="index.html" class="vs-opt">Option 1</a>
+    <a href="index-option2.html" class="vs-opt is-active">Option 2</a>
     <a href="index-option3.html" class="vs-opt">Option 3</a>
   </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1 class="hero-title">Confidential<br/>Onchain Finance</h1>
-        <p class="hero-sub">
-          Powered by Nox, iExec's confidential execution layer. Build encrypted
-          smart contracts for DeFi, RWA, payments and tokenization. TEE-secured,
-          composable, audit-ready.
-        </p>
-        <div class="hero-cta">
-          <a href="https://docs.iex.ec" class="btn btn-primary"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Start Building</span><span class="btn-label-text" aria-hidden="true">Start Building</span></span></span></a>
-          <a href="https://airtable.com/appgopSdZ45dIjn0b/pagLTx4IZN1VKm5zu/form" class="btn btn-ghost">Talk to us</a>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <video class="hero-anim" autoplay loop muted playsinline preload="auto">
-          <source src="assets/RLC%20anim%C3%A9%202.mp4" type="video/mp4" />
-        </video>
+  <!-- 1. HERO -->
+  <section class="hero hero--page">
+    <div class="container hero-page-inner reveal reveal--blur">
+      <p class="eyebrow">Since 2017</p>
+      <h1 class="hero-title">Privacy infrastructure<br/>for Web3, since 2017</h1>
+      <p class="hero-sub">Building TEE-secured privacy for 8 years. Now powering Confidential DeFi &amp; RWA with Nox.</p>
+      <div class="hero-cta hero-cta--center">
+        <a href="https://docs.iex.ec" class="btn btn-primary" target="_blank" rel="noopener"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Start Building</span><span class="btn-label-text" aria-hidden="true">Start Building</span></span></span></a>
+        <a href="https://airtable.com/appgopSdZ45dIjn0b/pagLTx4IZN1VKm5zu/form" class="btn btn-ghost" target="_blank" rel="noopener">Talk to us</a>
       </div>
     </div>
   </section>
 
-  <!-- PROBLEM STATEMENT -->
+  <!-- 2. HISTORIC STATS -->
   <section class="section section-light">
     <div class="container">
-      <header class="section-head reveal reveal--blur">
-        <p class="eyebrow">The problem</p>
-        <h2 class="section-title">Public blockchains were<br/>built on transparency</h2>
-        <p class="section-sub">
-          That same transparency is blocking institutional capital from DeFi and RWA.
-          Confidential execution lets institutions move at market speed without exposing
-          balance sheets, allocations, or liquidity intent.
-        </p>
-      </header>
-
-      <div class="problem-grid problem-grid-3 reveal-stagger reveal-stagger--soft">
-        <article class="problem-card">
-          <span class="problem-num">01</span>
-          <h3>Exposed positions</h3>
-          <p>Every balance, allocation and transfer is visible to competitors, front-runners, and counterparties.</p>
-        </article>
-        <article class="problem-card">
-          <span class="problem-num">02</span>
-          <h3>Compliance friction</h3>
-          <p>KYC, AML and reporting rarely fit clean smart-contract logic, and ZK alternatives break composability.</p>
-        </article>
-        <article class="problem-card">
-          <span class="problem-num">03</span>
-          <h3>No selective disclosure</h3>
-          <p>Auditors, regulators and partners get all-or-nothing access. There's no need-to-know on public chains.</p>
-        </article>
+      <div class="metrics-row metrics-row-3 reveal-stagger reveal-stagger--scale">
+        <div class="metric"><strong>8 years</strong><span>building privacy infrastructure</span></div>
+        <div class="metric"><strong>1.2M+</strong><span>TEE-secured transactions</span></div>
+        <div class="metric"><strong>70+</strong><span>builders onboarded</span></div>
       </div>
     </div>
   </section>
 
-  <!-- SOLUTION — 3 piliers -->
+  <!-- 3. TIMELINE -->
+  <section class="section">
+    <div class="container">
+      <header class="section-head reveal reveal--blur">
+        <p class="eyebrow">Our journey</p>
+        <h2 class="section-title">From research to production</h2>
+      </header>
+      <ol class="roadmap-timeline roadmap-timeline--5 reveal-stagger">
+        <li class="roadmap-step is-done"><span class="roadmap-stage">2017</span><span class="roadmap-title">ICO &amp; research</span><span class="roadmap-meta">Founding research and token launch</span></li>
+        <li class="roadmap-step is-done"><span class="roadmap-stage">2019</span><span class="roadmap-title">First workerpool</span><span class="roadmap-meta">First TEE-secured workerpool live</span></li>
+        <li class="roadmap-step is-done"><span class="roadmap-stage">2021</span><span class="roadmap-title">DataProtector</span><span class="roadmap-meta">Encrypt, manage and monetize data</span></li>
+        <li class="roadmap-step is-done"><span class="roadmap-stage">2024</span><span class="roadmap-title">iApp Generator</span><span class="roadmap-meta">Build TEE apps in minutes</span></li>
+        <li class="roadmap-step is-current"><span class="roadmap-stage">2026</span><span class="roadmap-title">Nox mainnet</span><span class="roadmap-marker">You are here</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4. TWO PROTOCOLS, ONE MISSION -->
   <section class="section section-mauve">
     <div class="container">
       <header class="section-head reveal reveal--blur">
-        <p class="eyebrow eyebrow-on-mauve">The solution</p>
-        <h2 class="section-title">Programmable privacy,<br/>built for onchain finance</h2>
-        <p class="section-sub">
-          Nox keeps balances, allocations and amounts encrypted on-chain, while staying
-          composable with the protocols institutions already use.
-        </p>
+        <p class="eyebrow eyebrow-on-mauve">The products</p>
+        <h2 class="section-title">Two protocols, one mission</h2>
+        <p class="section-sub">Programmable privacy across the full Web3 stack.</p>
       </header>
-
-      <div class="pillar-grid reveal-stagger reveal-stagger--blur">
-        <article class="pillar-card">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <rect class="icon-stroke" x="3" y="11" width="18" height="10" rx="2" pathLength="1"/>
-              <path class="icon-stroke" d="M7 11V7a5 5 0 0 1 10 0v4" pathLength="1"/>
-            </svg>
-          </div>
-          <h3>Confidential execution</h3>
-          <p>Intel TDX trusted enclaves keep contract state and inputs encrypted end-to-end, with hardware-attested integrity. Live on mainnet today.</p>
-          <ul class="pillar-list">
-            <li>Encrypted state &amp; calldata</li>
-            <li>Hardware attestation</li>
-            <li>Sub-second latency</li>
-          </ul>
+      <div class="split-grid reveal-stagger reveal-stagger--scale">
+        <article class="split-card">
+          <span class="try-badge try-badge-live">NEW</span>
+          <h3>Nox Protocol</h3>
+          <p>Confidential smart contracts for DeFi and RWA. Encrypted state on-chain, composable with existing protocols.</p>
+          <a href="confidential-defi-rwa.html" class="btn btn-primary split-cta"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Explore Nox</span><span class="btn-label-text" aria-hidden="true">Explore Nox</span></span></span></a>
         </article>
-        <article class="pillar-card">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path class="icon-stroke" d="M4 12h6M14 12h6M12 4v6M12 14v6" pathLength="1"/>
-              <circle class="icon-stroke" cx="12" cy="12" r="2" pathLength="1"/>
-            </svg>
-          </div>
-          <h3>DeFi-composable</h3>
-          <p>Confidential primitives that plug into Solidity, ERC-20s and the protocols you already deploy. No special wallets, no liquidity islands.</p>
-          <ul class="pillar-list">
-            <li>Standard Solidity tooling</li>
-            <li><code>euint</code> types for encrypted data</li>
-            <li>Native UX, no new wallet</li>
-          </ul>
-        </article>
-        <article class="pillar-card">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path class="icon-stroke" d="M12 2l9 4v6c0 5-3.5 9-9 10-5.5-1-9-5-9-10V6l9-4z" pathLength="1"/>
-              <path class="icon-stroke" d="M9 12l2 2 4-4" pathLength="1"/>
-            </svg>
-          </div>
-          <h3>Compliance-ready</h3>
-          <p>Selective disclosure lets auditors, regulators and counterparties see exactly what they need, on a per-field, per-party basis.</p>
-          <ul class="pillar-list">
-            <li>Per-field disclosure</li>
-            <li>KYC/AML in contract</li>
-            <li>Auditable on-chain</li>
-          </ul>
+        <article class="split-card">
+          <span class="try-badge try-badge-poc">SINCE 2019</span>
+          <h3>PoCo Protocol</h3>
+          <p>Off-chain TEE-secured computation for privacy apps, data protection, and confidential messaging.</p>
+          <!-- PLACEHOLDER: existing PoCo page URL -->
+          <a href="https://docs.iex.ec" class="btn btn-primary split-cta" target="_blank" rel="noopener"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Explore PoCo</span><span class="btn-label-text" aria-hidden="true">Explore PoCo</span></span></span></a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- WHAT YOU CAN BUILD — 4 territoires -->
-  <section class="section section-light">
+  <!-- 5. WHEN TO USE WHAT -->
+  <section class="section">
     <div class="container">
       <header class="section-head reveal reveal--blur">
-        <p class="eyebrow">What you can build</p>
-        <h2 class="section-title">Four territories for<br/>confidential onchain finance</h2>
+        <p class="eyebrow">Decision guide</p>
+        <h2 class="section-title">Which protocol fits your use case?</h2>
       </header>
-
-      <div class="territory-grid reveal-stagger territory-grid--deck">
-        <a href="https://cdefi.iex.ec" class="territory-card">
-          <span class="territory-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/><path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg></span>
-          <span class="territory-badge">DeFi</span>
-          <h3>Encrypted balances &amp; transfers</h3>
-          <p>Hide balances and transfer amounts on any ERC-20. Composable with existing DeFi protocols.</p>
-          <span class="stack-link">Try cToken →</span>
-        </a>
-        <a href="#" class="territory-card">
-          <span class="territory-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9 21v-6h6v6"/><path d="M9 11h.01M15 11h.01"/></svg></span>
-          <span class="territory-badge">RWA</span>
-          <h3>RWA tokenization</h3>
-          <p>Confidential securities, tokenized equity and funds with encrypted allocations and compliance hooks.</p>
-          <span class="stack-link">Try cVault →</span>
-        </a>
-        <a href="https://airtable.com/appgopSdZ45dIjn0b/pagLTx4IZN1VKm5zu/form" class="territory-card">
-          <span class="territory-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></span>
-          <span class="territory-badge">Payments</span>
-          <h3>Private settlements</h3>
-          <p>Private B2B settlement, payroll and confidential stablecoin transfers with selective disclosure.</p>
-          <span class="stack-link">Talk to us →</span>
-        </a>
-        <a href="https://docs.iex.ec/nox-protocol" class="territory-card">
-          <span class="territory-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
-          <span class="territory-badge">Custom logic</span>
-          <h3>Build your own use case</h3>
-          <p>Compose any confidential logic with Nox. Bring your Solidity contracts. Keep what should stay private, private.</p>
-          <span class="stack-link">Start building →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CODE -->
-  <section class="section section-dark">
-    <div class="container code-split reveal reveal--blur">
-      <div>
-        <p class="eyebrow eyebrow-on-dark">Code snippet</p>
-        <h2 class="section-title on-dark">Solidity is all<br/>you need</h2>
-        <p class="section-sub on-dark">
-          Use the tooling you already know. Standard Solidity, with new
-          <code>euint</code> types for encrypted data and on-demand decryption permissions.
-        </p>
-        <a href="https://docs.iex.ec/nox-protocol" class="btn btn-on-dark">Read the docs</a>
-      </div>
-      <div class="code-wrap">
-        <button type="button" class="code-copy" aria-label="Copy code to clipboard">
-          <svg class="code-copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          <span class="code-copy-label">Copy</span>
-        </button>
-        <pre class="code-block"><code><span class="c-key">contract</span> <span class="c-cls">ConfidentialToken</span> {
-    <span class="c-key">mapping</span>(address =&gt; euint64) <span class="c-key">private</span> balances;
-
-    <span class="c-key">function</span> <span class="c-fn">transfer</span>(address to, euint64 amount) {
-        balances[to] = Nox.add(balances[to], amount);
-        Nox.allow(balances[to], to);
-    }
-}</code></pre>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMPARISON TABLE -->
-  <section class="section section-light">
-    <div class="container">
-      <header class="section-head reveal reveal--blur">
-        <p class="eyebrow">Comparison</p>
-        <h2 class="section-title">Why iExec for<br/>confidential onchain finance</h2>
-        <p class="section-sub">
-          A side-by-side look at how iExec compares to other privacy stacks across the
-          properties that matter for institutional finance.
-        </p>
-      </header>
-
       <div class="compare-wrap reveal">
-        <table class="compare-table">
+        <table class="compare-table decision-table">
           <thead>
-            <tr>
-              <th>Capability</th>
-              <th class="col-highlight"><img class="compare-logo" src="assets/Logo-iExec-Horizontal-icon-Black%20(2).png" alt="iExec" /></th>
-              <th>FHE</th>
-              <th>MPC</th>
-              <th>ZK</th>
-            </tr>
+            <tr><th>Your need</th><th>Use</th></tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Live on mainnet</td>
-              <td class="col-highlight"><span class="cell yes">Yes</span></td>
-              <td><span class="cell yes">Yes</span></td>
-              <td><span class="cell mid">Partial</span></td>
-              <td><span class="cell yes">Yes</span></td>
-            </tr>
-            <tr>
-              <td>Composable with DeFi</td>
-              <td class="col-highlight"><span class="cell yes">Yes</span></td>
-              <td><span class="cell mid">Partial</span></td>
-              <td><span class="cell no">No</span></td>
-              <td><span class="cell no">No</span></td>
-            </tr>
-            <tr>
-              <td>Fast (low latency)</td>
-              <td class="col-highlight"><span class="cell yes">Yes</span></td>
-              <td><span class="cell no">No</span></td>
-              <td><span class="cell mid">Partial</span></td>
-              <td><span class="cell mid">Partial</span></td>
-            </tr>
-            <tr>
-              <td>No special wallets</td>
-              <td class="col-highlight"><span class="cell yes">Yes</span></td>
-              <td><span class="cell no">No</span></td>
-              <td><span class="cell no">No</span></td>
-              <td><span class="cell no">No</span></td>
-            </tr>
-            <tr>
-              <td>Selective disclosure</td>
-              <td class="col-highlight"><span class="cell yes">Yes</span></td>
-              <td><span class="cell mid">Partial</span></td>
-              <td><span class="cell no">No</span></td>
-              <td><span class="cell no">No</span></td>
-            </tr>
-            <tr>
-              <td>RWA-ready (KYC/AML in contract)</td>
-              <td class="col-highlight"><span class="cell yes">Yes</span></td>
-              <td><span class="cell mid">Partial</span></td>
-              <td><span class="cell no">No</span></td>
-              <td><span class="cell mid">Partial</span></td>
-            </tr>
+            <tr><td>Confidential DeFi (encrypted balances, vaults)</td><td><span class="use-badge use-badge--nox">Nox</span></td></tr>
+            <tr><td>RWA tokenization with private allocations</td><td><span class="use-badge use-badge--nox">Nox</span></td></tr>
+            <tr><td>Protect user data with access control</td><td><span class="use-badge use-badge--poco">PoCo · DataProtector</span></td></tr>
+            <tr><td>Build a TEE-powered dApp from scratch</td><td><span class="use-badge use-badge--poco">PoCo · iApp Generator</span></td></tr>
+            <tr><td>Send privacy-preserving messages on-chain</td><td><span class="use-badge use-badge--poco">PoCo · Web3Messaging</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <!-- TRY IT NOW -->
+  <!-- 6. FEATURED BUILDERS -->
+  <section class="section section-light">
+    <div class="container">
+      <header class="section-head center reveal reveal--blur">
+        <p class="eyebrow">Ecosystem</p>
+        <h2 class="section-title small">Trusted by builders across the ecosystem</h2>
+      </header>
+      <!-- PLACEHOLDER: builder logos (to validate with the team) -->
+      <div class="builder-grid reveal-stagger reveal-stagger--scale">
+        <div class="builder-card"><span class="builder-logo"><img src="assets/otomato-Logo.png" alt="Otomato" /></span><span class="builder-tag builder-tag--poco">PoCo</span></div>
+        <div class="builder-card"><span class="builder-logo"><img src="assets/apebond-Logo.png" alt="ApeBond" /></span><span class="builder-tag builder-tag--poco">PoCo</span></div>
+        <div class="builder-card"><span class="builder-logo"><span class="builder-mono">b</span></span><span class="builder-tag builder-tag--poco">PoCo</span></div>
+        <div class="builder-card"><span class="builder-logo"><img src="assets/aethir_logo.png" alt="Aethir" /></span><span class="builder-tag builder-tag--partner">Partner</span></div>
+        <div class="builder-card"><span class="builder-logo"><img src="assets/arweave_Logo.png" alt="ar.io" /></span><span class="builder-tag builder-tag--partner">Partner</span></div>
+        <div class="builder-card"><span class="builder-logo"><span class="builder-mono">DX</span></span><span class="builder-tag builder-tag--poco">PoCo</span></div>
+        <div class="builder-card"><span class="builder-logo"><span class="builder-mono">C</span></span><span class="builder-tag builder-tag--partner">Partner</span></div>
+        <div class="builder-card builder-card--reserved"><span class="builder-logo"><span class="builder-mono">+</span></span><span class="builder-tag builder-tag--nox">Your Nox app</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. TRY IT NOW -->
   <section class="section section-mauve">
     <div class="container">
       <header class="section-head reveal reveal--blur">
         <p class="eyebrow eyebrow-on-mauve">Try it now</p>
-        <h2 class="section-title">See confidential<br/>onchain finance in action</h2>
+        <h2 class="section-title">Try it now</h2>
       </header>
-
-      <div class="try-grid reveal-stagger reveal-stagger--scale">
-        <a href="https://cdefi.iex.ec" class="try-card">
-          <div class="try-card-body">
-            <span class="try-badge try-badge-live">LIVE DEMO</span>
-            <h3>Confidential Token</h3>
-            <p>Wrap any ERC-20 into a confidential asset. Transfer with encrypted amounts, decrypt with permissioned access.</p>
-            <span class="stack-link">Try the demo →</span>
-          </div>
-          <div class="try-card-visual" aria-hidden="true">
-            <div class="try-card-halo"></div>
-            <img src="assets/ctoken_visual.svg" alt="" />
-          </div>
-        </a>
-        <a href="#" class="try-card">
-          <div class="try-card-body">
-            <span class="try-badge try-badge-poc">PoC</span>
-            <h3>Confidential Vault</h3>
-            <p>Institutional-grade privacy for on-chain vaults. Encrypted allocations, policy-based disclosure for auditors.</p>
-            <span class="stack-link">Try the PoC →</span>
-          </div>
-          <div class="try-card-visual" aria-hidden="true">
-            <div class="try-card-halo"></div>
-            <img src="assets/cvault_visual.svg" alt="" />
-          </div>
-        </a>
+      <div class="uc-grid reveal-stagger reveal-stagger--scale">
+        <article class="cta-card">
+          <span class="try-badge try-badge-live">LIVE DEMO</span>
+          <h3>Confidential Token <span class="proto-pill proto-pill--nox">Nox</span></h3>
+          <p>Wrap any ERC-20 into a confidential asset.</p>
+          <a href="https://cdefi.iex.ec" class="btn btn-primary cta-card-btn" target="_blank" rel="noopener"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Try demo</span><span class="btn-label-text" aria-hidden="true">Try demo</span></span></span></a>
+        </article>
+        <article class="cta-card">
+          <span class="try-badge try-badge-poc">POC</span>
+          <h3>Confidential Vault <span class="proto-pill proto-pill--nox">Nox</span></h3>
+          <p>Institutional-grade privacy for on-chain vaults.</p>
+          <!-- PLACEHOLDER: cVault PoC URL -->
+          <a href="#" class="btn btn-primary cta-card-btn"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Try PoC</span><span class="btn-label-text" aria-hidden="true">Try PoC</span></span></span></a>
+        </article>
+        <article class="cta-card">
+          <span class="try-badge try-badge-live">LIVE DEMO</span>
+          <h3>Web3Messaging <span class="proto-pill proto-pill--poco">PoCo</span></h3>
+          <p>Privacy-preserving emails to Ethereum accounts.</p>
+          <a href="https://demo.iex.ec/web3messaging" class="btn btn-primary cta-card-btn" target="_blank" rel="noopener"><span class="btn-label"><span class="btn-label-inner"><span class="btn-label-text">Try demo</span><span class="btn-label-text" aria-hidden="true">Try demo</span></span></span></a>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- SOCIAL PROOF — logos carousel + metrics -->
-  <section class="section section-light">
-    <div class="container">
-      <header class="section-head center reveal reveal--blur">
-        <p class="eyebrow">Trusted by</p>
-        <h2 class="section-title small">The Nox ecosystem is growing</h2>
-      </header>
-
-      <div class="logo-marquee reveal reveal--blur" aria-hidden="true">
-        <div class="marquee-track">
-          <img class="marquee-logo" src="assets/arweave_Logo.png" alt="Arweave" />
-          <img class="marquee-logo" src="assets/aethir_logo.png" alt="Aethir" />
-          <img class="marquee-logo" src="assets/arweave_Logo.png" alt="Arweave" />
-          <img class="marquee-logo" src="assets/aethir_logo.png" alt="Aethir" />
-          <img class="marquee-logo" src="assets/arweave_Logo.png" alt="Arweave" />
-          <img class="marquee-logo" src="assets/aethir_logo.png" alt="Aethir" />
-          <img class="marquee-logo" src="assets/arweave_Logo.png" alt="" />
-          <img class="marquee-logo" src="assets/aethir_logo.png" alt="" />
-          <img class="marquee-logo" src="assets/arweave_Logo.png" alt="" />
-          <img class="marquee-logo" src="assets/aethir_logo.png" alt="" />
-          <img class="marquee-logo" src="assets/arweave_Logo.png" alt="" />
-          <img class="marquee-logo" src="assets/aethir_logo.png" alt="" />
-        </div>
-      </div>
-
-      <div class="metrics-row metrics-row-3 reveal-stagger reveal-stagger--scale">
-        <div class="metric">
-          <strong>70+</strong>
-          <span>Builders onboarded</span>
-        </div>
-        <div class="metric">
-          <strong>100+</strong>
-          <span>Apps deployed</span>
-        </div>
-        <div class="metric">
-          <strong>1.2M+</strong>
-          <span>TEE transactions</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROADMAP TEASER -->
+  <!-- 8. WHY IEXEC -->
   <section class="section section-light">
     <div class="container">
       <header class="section-head reveal reveal--blur">
-        <p class="eyebrow">Roadmap</p>
-        <h2 class="section-title">Nox mainnet is live.<br/>Here's what's next</h2>
+        <p class="eyebrow">Comparison</p>
+        <h2 class="section-title">Why iExec for<br/>privacy in Web3</h2>
+        <p class="section-sub">A side-by-side look at how iExec compares to other privacy stacks.</p>
       </header>
-
-      <ol class="roadmap-timeline reveal-stagger">
-        <li class="roadmap-step is-done">
-          <span class="roadmap-stage">Q1 2026</span>
-          <span class="roadmap-title">Testnet</span>
-          <span class="roadmap-meta">Public testnet, first iApps</span>
-        </li>
-        <li class="roadmap-step is-current">
-          <span class="roadmap-stage">Q2 2026</span>
-          <span class="roadmap-title">Mainnet</span>
-          <span class="roadmap-marker">You are here</span>
-        </li>
-        <li class="roadmap-step">
-          <span class="roadmap-stage">Q3 2026</span>
-          <span class="roadmap-title">Multi-chain</span>
-          <span class="roadmap-meta">Expand beyond initial L2</span>
-        </li>
-        <li class="roadmap-step">
-          <span class="roadmap-stage">Q4 2026</span>
-          <span class="roadmap-title">SDK GA</span>
-          <span class="roadmap-meta">Production-ready SDK</span>
-        </li>
-      </ol>
-
-      <div class="roadmap-cta">
-        <a href="https://www.iex.ec/academy/2026-privacy-roadmap" class="btn btn-ghost">Read the 2026 Privacy Roadmap</a>
+      <div class="compare-wrap reveal">
+        <table class="compare-table">
+          <thead>
+            <tr><th>Capability</th><th class="col-highlight"><img class="compare-logo" src="assets/Logo-iExec-Horizontal-icon-Black%20(2).png" alt="iExec" /></th><th>FHE</th><th>MPC</th><th>ZK</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Live on mainnet</td><td class="col-highlight"><span class="cell yes">Yes</span></td><td><span class="cell yes">Yes</span></td><td><span class="cell mid">Partial</span></td><td><span class="cell yes">Yes</span></td></tr>
+            <tr><td>Composable with DeFi</td><td class="col-highlight"><span class="cell yes">Yes</span></td><td><span class="cell mid">Partial</span></td><td><span class="cell no">No</span></td><td><span class="cell no">No</span></td></tr>
+            <tr><td>Fast (low latency)</td><td class="col-highlight"><span class="cell yes">Yes</span></td><td><span class="cell no">No</span></td><td><span class="cell mid">Partial</span></td><td><span class="cell mid">Partial</span></td></tr>
+            <tr><td>No special wallets</td><td class="col-highlight"><span class="cell yes">Yes</span></td><td><span class="cell no">No</span></td><td><span class="cell no">No</span></td><td><span class="cell no">No</span></td></tr>
+            <tr><td>Selective disclosure</td><td class="col-highlight"><span class="cell yes">Yes</span></td><td><span class="cell mid">Partial</span></td><td><span class="cell no">No</span></td><td><span class="cell no">No</span></td></tr>
+            <tr><td>RWA-ready (KYC/AML in contract)</td><td class="col-highlight"><span class="cell yes">Yes</span></td><td><span class="cell mid">Partial</span></td><td><span class="cell no">No</span></td><td><span class="cell mid">Partial</span></td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
+  <!-- 9. ROADMAP TEASER -->
+  <section class="section">
+    <div class="container">
+      <header class="section-head reveal reveal--blur">
+        <p class="eyebrow">Roadmap</p>
+        <h2 class="section-title">Nox mainnet is live</h2>
+      </header>
+      <ol class="roadmap-timeline reveal-stagger">
+        <li class="roadmap-step is-done"><span class="roadmap-stage">Q1 2026</span><span class="roadmap-title">Testnet</span><span class="roadmap-meta">Public testnet, first iApps</span></li>
+        <li class="roadmap-step is-current"><span class="roadmap-stage">Q2 2026</span><span class="roadmap-title">Mainnet</span><span class="roadmap-marker">You are here</span></li>
+        <li class="roadmap-step"><span class="roadmap-stage">Q3 2026</span><span class="roadmap-title">Multi-chain</span><span class="roadmap-meta">Expand beyond initial L2</span></li>
+        <li class="roadmap-step"><span class="roadmap-stage">Q4 2026</span><span class="roadmap-title">SDK GA</span><span class="roadmap-meta">Production-ready SDK</span></li>
+      </ol>
+      <div class="roadmap-cta">
+        <a href="https://www.iex.ec/academy/2026-privacy-roadmap" class="btn btn-ghost" target="_blank" rel="noopener">Read the 2026 Privacy Roadmap</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. NEWSLETTER -->
   <section class="section-newsletter">
     <div class="container newsletter-box reveal reveal--scale">
       <div>
@@ -614,6 +427,7 @@
       </form>
     </div>
   </section>
+
 
   <!-- FOOTER -->
   <footer class="footer">
