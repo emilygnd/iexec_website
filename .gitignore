@@ -6,3 +6,5 @@ _pagegen.ps1
 _body_*.html
 node_modules/
 .DS_Store
+
+.vercel
