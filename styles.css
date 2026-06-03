@@ -3186,3 +3186,157 @@ html { scroll-behavior: smooth; }
   .builder-grid { grid-template-columns: repeat(2, 1fr); }
   .version-switch .vs-label { display: none; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   PREMIUM layer — scoped to homepage variants (.home-alt)
+   ════════════════════════════════════════════════════════════ */
+html { scroll-behavior: smooth; }
+
+/* --- Hero: drifting aurora + gradient headline --- */
+.home-alt .hero { position: relative; overflow: hidden; }
+.home-alt .hero::after {
+  content: "";
+  position: absolute;
+  inset: -25% -10% auto -10%;
+  height: 130%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(38% 48% at 18% 22%, rgba(116, 142, 255, 0.28), transparent 70%),
+    radial-gradient(34% 44% at 82% 12%, rgba(177, 195, 255, 0.24), transparent 70%),
+    radial-gradient(42% 52% at 62% 85%, rgba(143, 163, 255, 0.20), transparent 72%);
+  filter: blur(24px);
+  animation: alt-aurora 20s ease-in-out infinite alternate;
+}
+@keyframes alt-aurora {
+  0%   { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); }
+  100% { transform: translate3d(-2%, -4%, 0) scale(1.1) rotate(3deg); }
+}
+.home-alt .hero-grid { position: relative; z-index: 1; }
+.home-alt .hero-title {
+  background: linear-gradient(180deg, var(--text) 35%, var(--indigo-600) 130%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="dark"] .home-alt .hero-title {
+  background: linear-gradient(180deg, #ffffff 30%, #A9BCFF 125%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Eyebrows become refined pills with a glowing dot --- */
+.home-alt .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 6px 11px;
+  border-radius: 999px;
+  background: var(--mauve-soft);
+  border: 1px solid var(--mauve-border);
+  margin-bottom: 22px;
+}
+.home-alt .eyebrow::before {
+  content: "";
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(116, 142, 255, 0.18);
+}
+
+/* --- Stats: oversized gradient numbers --- */
+.home-alt .metric strong {
+  background: linear-gradient(135deg, var(--indigo-500), var(--indigo-700));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="dark"] .home-alt .metric strong {
+  background: linear-gradient(135deg, #B6C6FF, #6E83F5);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Cards: soft top tint, top accent line, deeper hover glow --- */
+.home-alt .split-card,
+.home-alt .cta-card,
+.home-alt .decision-card,
+.home-alt .proto-col,
+.home-alt .builder-card {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(177, 195, 255, 0.06), transparent 55%),
+    var(--bg);
+  transition:
+    transform 0.5s var(--ease-out-expo),
+    box-shadow 0.5s var(--ease-out-expo),
+    border-color 0.4s var(--ease-out-expo);
+}
+[data-theme="dark"] .home-alt .split-card,
+[data-theme="dark"] .home-alt .cta-card,
+[data-theme="dark"] .home-alt .decision-card,
+[data-theme="dark"] .home-alt .proto-col,
+[data-theme="dark"] .home-alt .builder-card {
+  background:
+    linear-gradient(180deg, rgba(116, 142, 255, 0.10), transparent 55%),
+    rgba(255, 255, 255, 0.03);
+}
+.home-alt .split-card::before,
+.home-alt .cta-card::before,
+.home-alt .proto-col::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 28px; right: 28px;
+  height: 2px;
+  border-radius: 0 0 4px 4px;
+  background: linear-gradient(90deg, transparent, var(--mauve), transparent);
+  opacity: 0.65;
+}
+.home-alt .split-card:hover,
+.home-alt .cta-card:hover,
+.home-alt .decision-card:hover,
+.home-alt .proto-col:hover,
+.home-alt .builder-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--mauve);
+  box-shadow: 0 30px 70px rgba(116, 142, 255, 0.28);
+}
+
+/* --- Timeline: glowing current step + hover lift --- */
+.home-alt .roadmap-step {
+  transition:
+    transform 0.4s var(--ease-out-expo),
+    box-shadow 0.4s var(--ease-out-expo),
+    border-color 0.4s var(--ease-out-expo);
+}
+.home-alt .roadmap-step:hover {
+  transform: translateY(-4px);
+  border-color: var(--mauve);
+  box-shadow: 0 22px 48px rgba(116, 142, 255, 0.22);
+}
+.home-alt .roadmap-step.is-current {
+  box-shadow: 0 24px 54px rgba(116, 142, 255, 0.35);
+}
+.home-alt .roadmap-marker::before { animation: alt-pulse 2.2s ease-in-out infinite; }
+@keyframes alt-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(116, 142, 255, 0.5); }
+  50%      { box-shadow: 0 0 0 7px rgba(116, 142, 255, 0); }
+}
+
+/* --- Statement (Option 3): shimmering gradient accent line --- */
+.home-alt .statement-line--accent {
+  background: linear-gradient(100deg, var(--indigo-500), var(--mauve), var(--indigo-600), var(--mauve));
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: alt-shimmer 7s linear infinite;
+}
+@keyframes alt-shimmer { to { background-position: 250% center; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .home-alt .hero::after,
+  .home-alt .roadmap-marker::before,
+  .home-alt .statement-line--accent { animation: none; }
+}
